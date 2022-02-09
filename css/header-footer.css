@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+._lock{
+    overflow: hidden;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.header-logo{
+    width: 232px;
+    margin: 10px 10px;
+}
+
+.menu__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+}
+.menu__icon span,
+.menu__icon::before,
+.menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: black;
+}
+.menu__icon::before,
+.menu__icon::after {
+    content: "";
+}
+.menu__icon::before {
+    top: 0;
+}
+.menu__icon::after {
+    bottom: 0;
+}
+.menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+}
+
+.menu__icon._active span {
+    transform: scale(0) translate(0px, -50%);
+}
+.menu__icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+}
+.menu__icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+}
+
+.menu__list > div {
+	position: relative;
+}
+
+.menu__list {
+}
+.menu__list > div {
+	padding: 10px 10px;
+}
+
+.menu__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__block > a{
+    margin: 5px 0;
+}
+
+.menu__body {
+    position: fixed;
+    margin-top: 120px;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 520px;
+    background-color:  #FFF;
+    padding: 10px 30px 55px 30px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+}
+.menu__body._active {
+    left: 0;
+}
+
+.nav-header::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+@media (max-height: 510px) {
+    .menu__body{
+        padding-bottom: 320px;
+    }
+}
+
+
+
+
