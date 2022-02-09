@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+.registration{
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/index/registration/fon-registration.jpg);
+    height: 635px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.registration-block{
+    position: relative;
+    padding: 15px;
+    top: 190px;
+}
+
+.registration-text > h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.registration-text > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #e6e6e6;
+    margin-bottom: 50px;
+}
+
+.registration-button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16.5px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #e6e6e6;
+    background-color: #ff7c7c;
+    padding: 15px 27px;
+    border-radius: 25px ;
+    border: 2px solid #ff7c7c;
+}
+
+.registration-button:hover{
+    background-color: transparent;
+    transition: 0.5s;
+}
+
