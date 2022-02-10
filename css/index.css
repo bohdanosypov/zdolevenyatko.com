@@ -4,19 +4,33 @@
     scroll-behavior: smooth;
 }
 
+h2{
+    font-size: 34px;
+    line-height: 44px;
+}
+@media (min-width: 768px){
+    h2{
+        font-size: 39px;
+        line-height: 47px;
+    }
+}
+
+@media (min-width: 992px){
+    h2{
+        font-size: 44px;
+        line-height: 53px;
+    }
+}
+
 
 .registration{
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/index/registration/fon-registration.jpg);
-    height: 635px;
     background-size: cover;
     background-position: center;
-    
 }
 
 .registration-block{
-    position: relative;
-    padding: 15px;
-    top: 190px;
+    padding: 170px 15px 170px;
 }
 
 .registration-text > h1{
@@ -53,4 +67,196 @@
     background-color: transparent;
     transition: 0.5s;
 }
+
+@media (min-width: 768px){
+    .registration-block{
+        max-width: 410px;
+        padding: 275px 30px 140px;
+    }
+    .registration-text > h1{
+        font-size: 39px;
+        line-height: 47px;
+    }
+}
+
+@media (min-width: 992px){
+    .registration-block{
+        max-width: 600px;
+        padding: 400px 30px 180px;
+    }
+    .registration-text > h1{
+        font-size: 44px;
+        line-height: 53px;
+    }
+}
+
+.about-fon{
+    background-image: url(../img/index/about-progres/about-progres-fon.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about{
+    padding: 60px 20px 30px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+
+.about-photo{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.about-text > h2{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #21243d;
+    margin: 10px auto 20px;
+}
+
+.about-text > h2 > span{
+    color: #ff7c7c;
+}
+
+.about-text > h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #7685a8;
+    margin-bottom: 30px;
+}
+
+.about-text > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #7685a8;
+    margin-bottom: 10px;
+}
+
+.about-text-check{
+    display: flex;
+    padding: 5px 0;
+    align-items: flex-start;
+}
+
+.about-text-check > img{
+    width: 22px;
+    margin-right: 8px;
+}
+
+.about-text-check > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #7685a8;
+}
+
+@media (min-width: 768px){
+    .about{
+        /* flex-wrap: nowrap; */
+        flex-direction: row;
+    }
+    .about-photo{
+        width: 40%;
+        height: fit-content;
+        margin: 0 15px;
+    }
+}
+
+@media (min-width: 992px){
+    .about-photo{
+        width: 50%;
+        margin: 10px 30px 10px 10px;
+    }
+    .about-text-check{
+        padding: 10px 0;
+    }
+}
+
+.about-progres{
+    display: grid;
+    padding: 0px 20px 30px;
+}
+
+
+.about-progres-card > img, h3,hr,p{
+    margin: 5px 0;
+}
+
+.about-progres-card > hr{
+    border: none;  
+    height: 4px; 
+    width: 20%;
+}
+
+
+.about-progres-card > img{
+    width: 70px;
+}
+
+.about-progres-card > h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 800;
+    color: #21243d;
+}
+
+.about-progres-card > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #7685a8;
+    margin-bottom: 35px;
+}
+
+.progres-line-green{
+    background-color: #49af8b;
+}
+
+.progres-line-blue{
+    background-color: #3080e3;
+}
+
+.progres-line-red{
+    background-color: #FF7C7C;
+}
+
+.progres-line-yellow{
+    background-color: #FFD082;
+}
+
+@media (min-width: 768px){
+    .about-progres{
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-progres-card > img{
+        width: 100px;
+    }
+    .about-progres-card > h3{
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .about-progres-card{
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 992px){
+    .about-progres{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .about-progres-card > h3{
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+
 
