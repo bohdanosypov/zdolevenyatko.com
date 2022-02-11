@@ -5,8 +5,11 @@
 }
 
 h2{
+    font-family: 'Nunito', sans-serif;
     font-size: 34px;
     line-height: 44px;
+    font-weight: 800;
+    color: #21243d;
 }
 @media (min-width: 768px){
     h2{
@@ -109,9 +112,6 @@ h2{
 }
 
 .about-text > h2{
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    color: #21243d;
     margin: 10px auto 20px;
 }
 
@@ -140,7 +140,6 @@ h2{
 .about-text-check{
     display: flex;
     padding: 5px 0;
-    align-items: flex-start;
 }
 
 .about-text-check > img{
@@ -183,7 +182,7 @@ h2{
 }
 
 
-.about-progres-card > img, h3,hr,p{
+.about-progres-card > img, h3, hr{
     margin: 5px 0;
 }
 
@@ -212,7 +211,7 @@ h2{
     line-height: 28px;
     font-weight: 400;
     color: #7685a8;
-    margin-bottom: 35px;
+    margin: 5px 0 35px;
 }
 
 .progres-line-green{
@@ -298,9 +297,315 @@ h2{
 
 @media (min-width: 768px){
     .about-number > div{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        justify-items: center;
+        display: flex;
+        justify-content: space-around;
+     }
+     .about-number-card > h4{
+        font-size: 69px;
+        line-height: 76px;
+     }
+     .about-number-card > p{
+        font-size: 19px;
+        line-height: 27px;
+     }
+}
+
+@media (min-width: 992px){
+    .about-number-card > h4{
+        font-size: 80px;
+        line-height: 88px;
+     }
+     .about-number-card > p{
+        font-size: 20px;
+        line-height: 28px;
+     }
+}
+
+
+.our-groups{
+    padding: 50px 20px 0;
+    text-align: center;
+}
+
+.our-groups > h2 {
+    padding-bottom: 20px;
+}
+
+.our-groups > h2 > span{
+    color: #FFD082;
+}
+
+.our-groups-block{
+    display: grid;
+}
+
+.our-groups-card{
+    padding: 15px 15px 70px;
+}
+
+.our-groups-card > img{
+    width: 70%;
+}
+
+.our-groups-card > h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 800;
+    color: #ffffff;
+    padding: 15px;
+    background-color: #49af8b;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.our-groups-button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16.5px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ff7c7c;
+    background-color: transparent;
+    padding: 15px 27px;
+    border-radius: 25px ;
+    border: 1px solid #ff7c7c;
+}
+
+.our-groups-button:hover{
+    color:#ffffff;
+    background-color: #B6CBEC;
+    border: none;
+    transition: 0.5s;
+}
+
+#sun-groups{
+    background-color: #ff7c7c;
+}
+
+
+@media (min-width: 768px){
+    .our-groups-block{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
+@media (min-width: 992px){
+    .our-groups-card{
+        padding: 15px 30px 50px;
+    }
+    .our-groups-card > h3{
+        margin: 0 40px 30px;
+    }
+}
+
+.todo-list{
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/index/todo-list/children-fon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 24px;
+}
+
+.todo-list-block{
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 10px;
+}
+
+.todo-list-block > h2{
+    margin: 0 auto 20px 10px;
+}
+
+.todo-list-block > h2 > span{
+    color: #49af8b;
+}
+
+.todo-list-check{
+    display: flex;
+    padding: 10px;
+}
+
+.todo-list-check > img{
+    width: 22px;
+    margin-right: 10px;
+}
+
+.todo-list-check > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #7685a8;
+}
+
+@media (min-width: 768px){
+    .todo-list-block{
+        width: 40%;
+    }
+}
+
+
+/* Тематичні заняття */
+
+
+
+
+
+
+
+
+/* ----------------- */
+
+
+
+
+/* Таймлайн          */
+
+
+.process{
+    background-image: url(../img/index/process/progres-fon.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 24px;
+}
+
+.process-block > h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.process-block > h2 > span{
+    color: #49af8b;
+    
+}
+
+
+#timeline *, 
+#timeline *:before, 
+#timeline *:after {
+    box-sizing: border-box;
+}    
+#timeline .timeline-item:after, 
+#timeline .timeline-item:before {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+#timeline {
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+    padding: 0 10px;
+    transition: all 0.4s ease;
+}
+#timeline:before {
+    content: "";
+    width: 3px;
+    height: 90%;
+    background: #21243d;
+    left: 50%;
+    top: 0;
+    position: absolute;
+}
+#timeline:after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+}
+#timeline .timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+}
+#timeline .timeline-icon {
+    background: #FFD082;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    overflow: hidden;
+    margin-left: -33px;
+    border-radius: 50%;
+    
+}
+#timeline .timeline-item .timeline-icon p {
+    line-height: 50px;
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+#timeline .timeline-item .timeline-content {
+    width: 45%;
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+#timeline .timeline-item .timeline-content h4 {
+    padding: 15px;
+    color: #49af8b;
+    margin: -20px -20px 10px -20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 800;
+}
+
+#timeline .timeline-item .timeline-content p {
+    color: #21243d;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #7685a8;
+}
+#timeline .timeline-item .timeline-content:before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    top: 20px;
+    width: 0;
+    height: 0;
+}
+
+
+#timeline .timeline-item:nth-child(odd) .timeline-content {
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    #timeline {
+        margin: 30px;
+        padding: 0px;
+        width: 90%;
+    }
+    #timeline:before {
+        left: 0;
+    }
+    #timeline .timeline-item .timeline-content {
+        width: 90%;
+        float: right;
+    }
+    #timeline .timeline-item .timeline-content:before, 
+    #timeline .timeline-item:nth-child(even) .timeline-content:before {
+        left: 10%;
+        margin-left: -6px;
+        border-left: 0;
+        border-right: 7px solid #337AB7;
+    }
+    #timeline .timeline-item .timeline-icon {
+        left: 0;
+    }
+}
+
+
+
+
+/* ----------------- */
