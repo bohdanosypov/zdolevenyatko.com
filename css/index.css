@@ -91,7 +91,7 @@ h2{
 }
 
 .about-fon{
-    background-image: url(../img/index/about-progres/about-progres-fon.svg);
+    background-image: url(../img/index/about/about-progres-fon.svg);
     background-size: cover;
     background-position: center;
 }
@@ -99,7 +99,6 @@ h2{
 .about{
     padding: 60px 20px 30px;
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
 }
 
@@ -159,7 +158,6 @@ h2{
 
 @media (min-width: 768px){
     .about{
-        /* flex-wrap: nowrap; */
         flex-direction: row;
     }
     .about-photo{
@@ -191,7 +189,7 @@ h2{
 
 .about-progres-card > hr{
     border: none;  
-    height: 4px; 
+    height: 3px; 
     width: 20%;
 }
 
@@ -245,7 +243,7 @@ h2{
         line-height: 31px;
     }
     .about-progres-card{
-        padding: 0 15px;
+        padding: 0 18px;
     }
 }
 
@@ -259,4 +257,50 @@ h2{
     }
 }
 
+
+.about-number{
+    background-color: #B6CBEC;
+    padding: 70px 24px 30px;
+    text-align: center;
+}
+
+.about-number-card{
+    padding-bottom: 40px;
+
+}
+
+.about-number-card > h4{
+    font-family: 'Nunito', sans-serif;
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 800;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.about-number-card > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.about-number-card > hr{
+    border: none;  
+    height: 3px; 
+    width: 20%;
+    background-color: #FFD082;
+    margin: 3px auto;
+}
+
+
+@media (min-width: 768px){
+    .about-number > div{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+    }
+}
 
