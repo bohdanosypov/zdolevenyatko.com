@@ -59,7 +59,7 @@ h2{
     font-size: 16.5px;
     line-height: 20px;
     font-weight: 700;
-    color: #e6e6e6;
+    color: #ffffff;
     background-color: #ff7c7c;
     padding: 15px 27px;
     border-radius: 25px ;
@@ -182,19 +182,17 @@ h2{
 }
 
 
-.about-progres-card > img, h3, hr{
-    margin: 5px 0;
-}
-
 .about-progres-card > hr{
     border: none;  
     height: 3px; 
     width: 20%;
+    margin: 5px 0;
 }
 
 
 .about-progres-card > img{
     width: 70px;
+    margin: 5px 0;
 }
 
 .about-progres-card > h3{
@@ -203,6 +201,7 @@ h2{
     line-height: 29px;
     font-weight: 800;
     color: #21243d;
+    margin: 5px 0;
 }
 
 .about-progres-card > p{
@@ -443,8 +442,6 @@ h2{
         width: 40%;
     }
 }
-
-
 /* Тематичні заняття */
 
 
@@ -455,18 +452,11 @@ h2{
 
 
 /* ----------------- */
-
-
-
-
-/* Таймлайн          */
-
-
 .process{
     background-image: url(../img/index/process/progres-fon.svg);
     background-size: cover;
     background-position: center;
-    padding: 50px 24px;
+    padding: 50px 24px 15px;
 }
 
 .process-block > h2{
@@ -495,7 +485,7 @@ h2{
 #timeline {
     max-width: 1200px;
     width: 100%;
-    margin: 30px auto;
+    margin: 30px auto 0px;
     position: relative;
     padding: 0 10px;
     transition: all 0.4s ease;
@@ -503,7 +493,7 @@ h2{
 #timeline:before {
     content: "";
     width: 3px;
-    height: 90%;
+    height: 95%;
     background: #21243d;
     left: 50%;
     top: 0;
@@ -516,7 +506,7 @@ h2{
     width: 100%;
 }
 #timeline .timeline-item {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     position: relative;
 }
 #timeline .timeline-icon {
@@ -536,14 +526,13 @@ h2{
     
 }
 #timeline .timeline-item .timeline-icon p {
+    position: relative;
+    top: 10px;
     line-height: 50px;
     font-family: 'Nunito', sans-serif;
-    justify-content: center;
-    align-items: center;
 }
 #timeline .timeline-item .timeline-content {
     width: 45%;
-    background: transparent;
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -559,12 +548,12 @@ h2{
 }
 
 #timeline .timeline-item .timeline-content p {
-    color: #21243d;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     line-height: 29px;
     font-weight: 400;
     color: #7685a8;
+    align-items: center;
 }
 #timeline .timeline-item .timeline-content:before {
     content: '';
@@ -575,14 +564,13 @@ h2{
     height: 0;
 }
 
-
 #timeline .timeline-item:nth-child(odd) .timeline-content {
     float: right;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) {
     #timeline {
-        margin: 30px;
+        margin: 30px 30px 0;
         padding: 0px;
         width: 90%;
     }
@@ -593,19 +581,176 @@ h2{
         width: 90%;
         float: right;
     }
-    #timeline .timeline-item .timeline-content:before, 
-    #timeline .timeline-item:nth-child(even) .timeline-content:before {
-        left: 10%;
-        margin-left: -6px;
-        border-left: 0;
-        border-right: 7px solid #337AB7;
+    #timeline .timeline-item:nth-child(even) .timeline-content {
+        padding-right: 0px;
+        text-align: left; 
     }
     #timeline .timeline-item .timeline-icon {
         left: 0;
     }
 }
+@media (min-width: 768px){
+    #timeline .timeline-item .timeline-content h4{
+        font-size: 26px;
+        line-height: 31px;
+    }
+    #timeline .timeline-icon{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: -2px;
+        left: 0;
+        margin: auto;
+    }
+    #timeline .timeline-item .timeline-content{
+        margin-top: -100px;
+    }
+    #timeline .timeline-item .timeline-icon p{
+        top: 25%;
+        font-size: 26px;
+    }
+    #timeline .timeline-item:nth-child(even) .timeline-content{
+        text-align: right;
+    }
+}
 
 
+.process-button{
+    background-image: url(../img/index/process-button/progres-button-fon.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px 20px 40px;
+}
+
+.process-button-block{
+    text-align: center;
+}
+
+.process-button-block > img{
+    width: 50px;
+}
+
+.process-button-block > h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    color: #ffffff;
+    padding: 30px 0 50px;
+}
+
+@media (min-width: 768px){
+    .process-button-block > img{
+        width: 70px;
+    }
+    .process-button-block > h3{
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+.link-site{
+    padding: 50px 0 40px;
+    text-align: center;
+}
+
+.link-site > h2 > span{
+    color: #FFD082;
+}
+
+.link-site-block{
+    padding: 20px 24px 0;
+}
+
+.link-site-block > a:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.link-site-block > a > img{
+    width: 100%;
+    padding: 15px 0 15px;
+}
+
+@media (min-width: 768px){
+    .link-site-block{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .link-site-block > a > img{
+        padding: 15px 10px 15px;
+    }
+}
+
+@media (min-width: 992px){
+    .link-site-block{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.faq-map{
+    padding: 0 24px;
+}
+
+.faq-block{
+    padding-bottom: 30px;
+}
+
+.faq-block > h2{
+    color: #ff7c7c;
+}
+
+.faq-block > p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #7685a8;
+    padding: 20px 0;
+}
 
 
-/* ----------------- */
+.accordion {
+    color: #225bc1;
+    cursor: pointer;
+    padding: 18px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 31px;
+    transition: 0.4s;
+}
+
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #828285;
+    line-height: 30px;
+}
+
+.line{
+    height:1px;
+    width:100%;
+    background-color: #828285;
+    border: none;
+}
