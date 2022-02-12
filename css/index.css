@@ -443,13 +443,78 @@ h2{
     }
 }
 /* Тематичні заняття */
+.thematic-classes{
+    padding: 30px 24px 50px;
+    text-align: center;
+}
 
+.thematic-classes > h2{
+    padding-bottom: 20px;
+}
 
+.thematic-classes > h2 > span{
+    color: #ff7c7c;
+}
 
+.thematic-classes-card{
+    padding: 15px 0;
+}
 
+.thematic-classes-card > h4{
+    background-color: #FFD082;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    padding: 10px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
+.thematic-classes-photo{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
+.road-safety{
+    background-image: url(../img/index/thematic-classes/roadsafety.jpg);
+}
 
+.world-of-space{
+    background-image: url(../img/index/thematic-classes/worldofspace.jpg);
+
+}
+
+.olympic-week{
+    background-image: url(../img/index/thematic-classes/olympicweek.jpg);
+
+}
+
+.learn-kindness{
+    background-image: url(../img/index/thematic-classes/learnkindess.jpg);
+
+}
+
+@media (min-width: 768px){
+    .thematic-classes-block{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .thematic-classes-card{
+        padding: 15px 10px;
+    }
+}
+
+@media (min-width: 992px){
+    .thematic-classes-block{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 
 /* ----------------- */
 .process{
@@ -688,7 +753,7 @@ h2{
 }
 
 .faq-map{
-    padding: 0 24px;
+    padding: 30px 24px 0;
 }
 
 .faq-block{
@@ -710,30 +775,30 @@ h2{
 
 
 .accordion {
-    color: #225bc1;
+    background-color: #ffffff;
+    color: #21243d;
     cursor: pointer;
     padding: 18px 0;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-family: "Rubik", sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 22px;
-    font-weight: 500;
-    line-height: 31px;
+    line-height: 28px;
     transition: 0.4s;
 }
 
 
 .accordion:after {
-    content: '\002B';
+    content: '\25BE';
     color: #777;
     font-weight: bold;
     float: right;
 }
 
 .active:after {
-    content: "\2212";
+    content: "\25B4";
 }
 
 .panel {
@@ -741,11 +806,11 @@ h2{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 29px;
     font-weight: 400;
-    color: #828285;
-    line-height: 30px;
+    color: #7685a8;
 }
 
 .line{
@@ -753,4 +818,41 @@ h2{
     width:100%;
     background-color: #828285;
     border: none;
+}
+
+.map-block{
+    height: 100%;
+    width: 100%;
+}
+
+.map-block > iframe{
+    width: 100%;
+    height: 500px;
+}
+
+@media (min-width: 768px){
+    .faq-map{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .faq-block{
+        padding: 0 15px 15px;
+    }
+    .map-block{
+        padding: 0 15px;
+    }
+    .map-block > iframe{
+        height: 100%;
+    }
+}
+
+@media (min-width: 992px){
+    .faq-block > p{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .accordion{
+        font-size: 26px;
+        line-height: 34px;
+    }
 }

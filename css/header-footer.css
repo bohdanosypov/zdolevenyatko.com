@@ -179,3 +179,165 @@ li {
     }
 }
 
+
+/* footer */
+
+.footer{
+    background-color: #b6cbec;
+    padding: 30px 15px 20px;
+}
+
+.footer-logo-info{
+    text-align: center;
+}
+
+.footer-logo-info > a > img{
+    width: 164px;
+}
+
+.footer-logo-info > h4{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 20px 5px;
+}
+
+.footer-follow{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-follow-facebook{
+    width: 40px;
+}
+
+.footer-follow-esadok{
+    width: 165px;
+}
+
+
+.footer-menu{
+    padding: 20px 0 20px;
+    text-align: center;
+}
+
+.footer-menu > h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 29px;
+    color: #ffffff;
+    padding: 20px 5px 10px;
+}
+
+.footer-line{
+    height: 3px;
+    width: 20%;
+    background-color: #FF7C7C;
+    margin: auto;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.footer-nav > a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 5px 0;
+}
+
+.footer-contact{
+    text-align: center;
+}
+
+.footer-contact > h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 29px;
+    color: #ffffff;
+    padding: 20px 5px 10px;
+}
+
+.contact-card{
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.contact-card > a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.contact-card > img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.created-by{
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+.created-by-text > p{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 10px 5px 5px;
+}
+
+@media (min-width: 768px){
+    .footer-block{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-menu{
+        padding: 50px 0 0;
+    }
+    .footer-contact{
+        padding: 50px 0 0;
+    }
+    .created-by-text{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .footer-logo-info > h4{
+        text-align: justify;
+    }
+    .contact-card{
+        text-align: left;
+    }
+    .footer-contact-block{
+        padding: 5px 0;
+        position: relative;
+        left: 15%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px){
+    .footer-contact > h3, .footer-menu > h3{
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+
+
+
+
