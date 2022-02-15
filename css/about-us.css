@@ -43,12 +43,14 @@ h1{
     flex-direction: column;
     margin-bottom: 50px;
     align-items: center;
+    text-align: center;
 }
 
 .about-us-cards-photo{
     width: 260px;
     height: 290px;
     background-size: cover;
+    background-position: center;
     border-radius: 10px;
 }
 
@@ -68,6 +70,51 @@ h1{
     line-height: 23px;
     color: #21243d;
     padding: 0 0 5px;
+}
+
+
+
+.lyubov-moroz{
+    background-image: url(../img/staff/lyubov-moroz.jpg);
+}
+.shyba-nadiya{
+    background-image: url(../img/staff/shyba-nadiya.jpg);
+}
+.skipchak-halyna{
+    background-image: url(../img/staff/skipchak-halyna.jpg);
+}
+.hural-svitlana{
+    background-image: url(../img/staff/hural-svitlana.jpg);
+}
+.skipchak-khrystyna{
+    background-image: url(../img/staff/skipchak-khrystyna.jpg);
+}
+.harasevych-halyna{
+    background-image: url(../img/staff/harasevych-halyna.jpg);
+}
+.nakryyko-hanna{
+    background-image: url(../img/staff/nakryyko-hanna.jpg);
+}
+.prots-oksana{
+    background-image: url(../img/staff/prots-oksana.jpg);
+}
+.bohdanosypov{
+    background-image: url(../img/staff);
+}
+.romanyuk-mariya{
+    background-image: url(../img/staff/romanyuk-mariya.jpg);
+}
+.veretelnyk-oksana{
+    background-image: url(../img/staff/veretelnyk-oksana.jpg);
+}
+.krasinchuk-myroslava{
+    background-image: url(../img/staff/krasinchuk-myroslava.jpg);
+}
+.rohalya-nadiya{
+    background-image: url(../img/staff/rohalya-nadiya.jpg);
+}
+.hunka-halyna{
+    background-image: url(../img/staff/hunka-halyna.jpg);
 }
 
 
