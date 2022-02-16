@@ -91,6 +91,7 @@ h1{
 }
 .harasevych-halyna{
     background-image: url(../img/staff/harasevych-halyna.jpg);
+    background-position-y: 20%;
 }
 .nakryyko-hanna{
     background-image: url(../img/staff/nakryyko-hanna.jpg);
@@ -103,6 +104,7 @@ h1{
 }
 .romanyuk-mariya{
     background-image: url(../img/staff/romanyuk-mariya.jpg);
+    background-position-y: 0;
 }
 .veretelnyk-oksana{
     background-image: url(../img/staff/veretelnyk-oksana.jpg);
@@ -115,6 +117,9 @@ h1{
 }
 .hunka-halyna{
     background-image: url(../img/staff/hunka-halyna.jpg);
+}
+.about-us-space{
+    display: none;
 }
 
 
@@ -138,14 +143,12 @@ h1{
     }
     .about-us-cards-photo{
         height: 354px;
-        width: 100%;
+        width: 324px;
     }
     .about-us-cards{
         padding: 0 15px;
     }
-    .about-us-spase{
-        display: none;
-    }
+    
 
 }
 
@@ -153,8 +156,7 @@ h1{
     .about-us-block{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    
-    .about-us-spase{
+    .about-us-space{
         display: block;
     }
 }
@@ -162,5 +164,6 @@ h1{
 @media (min-width: 1100px){
     .about-us-cards-photo{
         height: 374px;
+        width: 100%;
     }
 }
